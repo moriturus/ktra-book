@@ -1,0 +1,9 @@
+[book]
+authors = ["Henrique Sasaki Yuya <moriturus@alimensir.com>"]
+language = "en"
+src = "src"
+title = "Ktra Book"
+description = "Ktra: Your Little Cargo Registry"
+
+[output.html]
+git-repository-url = "https://github.com/moriturus/ktra-book"
