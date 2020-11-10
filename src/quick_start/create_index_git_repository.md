@@ -2,7 +2,7 @@
 
 The ***Index Repository*** serves data read by `cargo` command when you build a crate depending on another crate hosted on `Ktra`.  
 You can use any *git repository hosting service* such as [GitHub](https://github.com), [GitLab](https://gitlab.com) and [Bitbucket](https://bitbucket.org/) even if its repository is private.  
-Additionally, of course, you can use private git repository managed by yourself if it is implemented HTTPS interface.
+Additionally, of course, you can use private git repository managed by yourself.
 
 ---
 
