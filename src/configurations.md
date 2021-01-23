@@ -43,11 +43,15 @@
 
 ### About Crate Files Configurations
 
-`index_config` is *optional* and it has these configurations:
+`crate_files_config` is *optional* and it has these configurations:
 
 - `dl_dir_path`
     - The default value is `./crates`.
     - Sets the crate files directory.
+- `cache_dir_path`
+    - *`crates-io-mirroring` feature needed.*
+    - The default value is `./crates_io_caches`.
+    - Sets the cache files directory.
 - `dl_path`
     - The default value is `["dl"]`.
     - Sets crate file download paths.
@@ -70,7 +74,7 @@
 
 ### About Server Configurations
 
-`db_config` is *optional* and it has these configurations:
+`server_config` is *optional* and it has these configurations:
 
 - `address`
     - The default value is `[0, 0, 0, 0]`.

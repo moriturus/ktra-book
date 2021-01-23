@@ -83,3 +83,30 @@ Since all APIs send passwords in ***cleartext***, it is highly recommended that 
     "token": "NEW TOKEN"
 }
 ```
+
+### Crates.io Mirroring
+
+> ***Note***:  
+> This API can be available when ***crates-io-mirroring*** feature is enabled.
+
+
+- Specification
+
+<table>
+    <tr>
+        <td>Endpoint</td>
+        <td>/ktra/api/v1/mirror/{crate_name}/{version}/download</td>
+    </tr>
+    <tr>
+        <td>Method</td>
+        <td>GET</td>
+    </tr>
+    <tr>
+        <td>Body</td>
+        <td>-</td>
+    </tr>
+</table>
+
+- Response
+
+Binary file.
