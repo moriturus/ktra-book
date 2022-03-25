@@ -71,6 +71,9 @@
 - `mongodb_url`
     - The default value is `redis://localhost:27017` if you use `db-mongo` feature.
     - Sets a Redis URL. *This can contain a username and password phrase to use the authentication*.
+- `login_prefix`
+    - The default value, for backwards compatible reasons, is `ktra-secure-auth:`
+    - Sets a prefix to the usernames in the database/registry.
 
 ### About Server Configurations
 
