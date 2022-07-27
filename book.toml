@@ -1,5 +1,8 @@
 [book]
-authors = ["Henrique Sasaki Yuya <moriturus@alimensir.com>"]
+authors = [
+    "Henrique Sasaki Yuya <moriturus@alimensir.com>",
+    "Gerry Agbobada <git@gagbo.net>"
+]
 language = "en"
 src = "src"
 title = "Ktra Book"

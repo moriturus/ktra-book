@@ -85,3 +85,36 @@
 - `port`
     - The default value is `8000`.
     - Sets a port number HTTP server listens.
+
+### About OpenId Configurations
+
+`openid_config` is *optional* and it has these configurations:
+- `issuer_url`
+   - Mandatory if `openid_config` is specified
+   - Sets the URL of the Identity Provider to use
+- `redirect_url`
+   - Mandatory if `openid_config` is specified
+   - Sets the base URL to use in the redirect URI for the authentication flow.
+     This should match the URL ktra is exposed to, in order to comply with
+     redirect URL verifications done by the Identity Provider.
+- `client_id`
+   - Mandatory if `openid_config` is specified
+   - Sets the ID of the ktra application as registered on the Identity Provider.
+- `client_secret`
+   - Mandatory if `openid_config` is specified
+   - Sets the secret of the ktra application as registered on the Identity
+     Provider.
+- `additional_scopes`
+   - Default is an empty list
+   - Sets the additional scopes queried by the application for OpenId. Usually
+     this value depends on the issuer.
+- `gitlab_authorized_groups`
+   - Default is unset
+   - Sets the authorized Gitlab groups whose members are allowed to create an
+     account on the registry and be publishers/owners. Leave empty or unset not
+     to check groups.
+- `gitlab_authorized_users`
+   - Default is unset
+   - Sets the authorized Gitlab users who are allowed to create an account on
+     the registry and be publishers/owners. Leave empty or unset not to check
+     users.
