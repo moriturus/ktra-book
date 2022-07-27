@@ -9,7 +9,7 @@ docker pull ghcr.io/moriturus/ktra:latest
 Or, if you want to pull a fixed version image, try this.  
 
 ```
-docker pull ghcr.io/moriturus/ktra:0.4.3
+docker pull ghcr.io/moriturus/ktra:0.7.0
 ```
 
 > ***Note***:  
@@ -24,20 +24,42 @@ Any commit on `develop` branch builds images listed below:
 
 - `latest`
     - `db-sled` featured image.
+- `openid-latest`
+    - `db-sled` featured image.
+    - `openid` support for user authentication and authorization
 - `db-redis-latest`
     - `db-redis` featured image.
+- `db-redis-openid-latest`
+    - `db-redis` featured image.
+    - `openid` support for user authentication and authorization
 - `db-mongo-latest`
     - `db-mongo` featured image.
+- `db-mongo-openid-latest`
+    - `db-mongo` featured image.
+    - `openid` support for user authentication and authorization
 
 
 Similarly, images below are built automatically when tags are pushed:
 
-- `{VERSION}` *(e.g. `0.4.3`)*
+- `{VERSION}` *(e.g. `0.7.0`)*
     - `db-sled` featured image.
+- `openid-{VERSION}`
+    - `db-sled` featured image.
+    - `openid` support for user authentication and authorization
 - `db-redis-{VERSION}`
     - `db-redis` featured image.
+- `db-redis-openid-{VERSION}`
+    - `db-redis` featured image.
+    - `openid` support for user authentication and authorization
 - `db-mongo-{VERSION}`
     - `db-mongo` featured image.
+- `db-mongo-openid-{VERSION}`
+    - `db-mongo` featured image.
+    - `openid` support for user authentication and authorization
+
+> ***Note***:  
+> The openid images are only available starting with `0.7` version
+
 
 ---
 
